@@ -1,11 +1,11 @@
-## ac-button
+## ac-table-sh
 
 ```
-$ ynpm install ac-button --save
+$ ynpm install ac-table-sh --save
 
 引入
 
-import {AcButton} from 'ac-button';
+import {AcTable} from 'ac-button';
 
 ```
 
@@ -17,17 +17,21 @@ import {AcButton} from 'ac-button';
 
 |参数|说明|类型|默认值|
 |:--|:---:|:--:|---:|
-|colors|颜色类型|string|default|
-|onClick|点击事件|fun|(e,this)|
-|disabled|true/false| bool| --|
+|className|样式|string|default|
+|parent|参数object|object|
+|btns|操作组(如下)| array| --|
 
-* 当前按钮集成Button所有的属性 
-       
+* btns所有的属性
+     |参数|说明|类型|默认值|
+     |:--|:---:|:--:|---:|
+     |label|文字|string|default|
+     |type|btns: next、last|string|
+     |func|回调函数| function| --|
 
 #### 开发调试
 
 ```sh
-$ cd ac-button
+$ cd ac-table-sh
 $ npm install
 $ npm run dev
 ```
